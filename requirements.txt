@@ -1,5 +1,5 @@
-streamlit
-transformers
-torch
-accelerate
-pyjwt
+streamlit>=1.25
+requests
+python-dotenv
+pdfminer.six
+python-docx
