@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-HF_API_TOKEN = os.environ.get("HF_API_TOKEN")
+HF_API_TOKEN = os.getenv("HF_API_TOKEN")
 if not HF_API_TOKEN:
     raise ValueError("HF_API_TOKEN not found in environment. Please set it in your .env file.")
 
