@@ -14,9 +14,9 @@ if not HF_API_TOKEN:
 headers = {"Authorization": f"Bearer {HF_API_TOKEN}"}
 
 # Endpoint for the main coaching response
-COACH_API_URL = "https://api-inference.huggingface.co/models/tiiuae/falcon-7b-instruct"
+COACH_API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-base"
 # Endpoint for summarization using facebook/bart-large-cnn
-SUMMARIZATION_API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
+SUMMARIZATION_API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-base"
 
 def query(api_url, payload):
     response = requests.post(api_url, headers=headers, json=payload)
